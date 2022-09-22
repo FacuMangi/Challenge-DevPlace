@@ -1,4 +1,4 @@
-def esPrimo(numero):
+def esPrimo(numero):        
     #Defino la funcion que sera usasda cuando se llame al programa
     for i in range(2, numero):
         #Creo un loop for para un rango del numero a analizar (este metodo range toma los naturales entre el 2 y el numero especificado en la funcion menos 1)
@@ -12,9 +12,18 @@ def esPrimo(numero):
     return x
 
 
-dato = input("Ingrese un numero: ")
-dato = int(dato)
-y = esPrimo(dato)
-#Dato es el numero ingresado por el usuario el cual pasa de ser un string a un valor numerico y llamo la funcion creada con ese dato
-print(f"El numero {dato} {y}")
-#Devuelvo el numero y la informacion recaudada
+while True:
+    #Dato es el numero ingresado por el usuario el cual pasa de ser un string a un valor numerico y llamo la funcion creada con ese dato
+    dato = input("Ingrese un numero: ")
+    dato = int(dato)
+    y = esPrimo(dato)       
+    print(f"El numero {dato} {y}")
+    #Devuelvo el numero y la informacion recaudada
+    
+    if input():
+        break
+
+
+
+
+
