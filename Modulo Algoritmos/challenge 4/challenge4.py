@@ -10,7 +10,9 @@ def main():
     while True:
         #Se crea el loop que permite intentar todas las veces que el usuaario quiera
         intento = input('> ')
+        #Input del intento en modo de string
         intento = int(intento)
+        #Cambio el tipo de dato de string a numerico
         
         if intento == randNum:
             break

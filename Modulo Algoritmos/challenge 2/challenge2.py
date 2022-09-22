@@ -4,12 +4,12 @@ def main():
         contraseña = input('Escriba una contraseña: ')
         #Setea la contraseña a recordar
         intentos = 1
-        #Seteo los intentos en 1 ya que sera el primer intento
+        #Seteo los intentos en 1, ya que sera el primer intento
         while intentos <= 3:
-            #Mientras los intentos sean menor o igual a 3 el loop se sigue ejecutando
+            #Mientras los intentos sean menor o igual a 3, la computadora seguira pidiendo la contraseña 
             dato = input(f'Escriba su contraseña: ')
             if dato != contraseña:
-                #Si la contraseña ingresada no es igual a la contraseña seteada se suma un intento a la cuenta de intentos
+                #Si la contraseña ingresada no es igual a la contraseña seteada previamente se suma un intento a la cuenta de intentos
                 print('Incorrecto, intente otra vez')
                 intentos += 1
 
@@ -23,7 +23,7 @@ def main():
                 print('Tenes que ejercitar la memoria')
         
         if input():
-            #Si el usuario escribe algo se rompe el while Active y se cierra el programa
+            #Con cualquier input del usuario se rompe el while Active y se cierra el programa, ya sea que el usuario haya recordado su contraseña o no
             break
 
 if __name__ == '__main__':

@@ -1,7 +1,7 @@
 def esPrimo(numero):        
-    #Defino la funcion que sera usasda cuando se llame al programa
+    #Defino la funcion que sera llamada cuando se ejecute el programa
     for i in range(2, numero):
-        #Creo un loop for para un rango del numero a analizar (este metodo range toma los naturales entre el 2 y el numero especificado en la funcion menos 1)
+        #Creo un loop for para un rango dado por el numero a analizar (este funcion range toma los naturales entre el 2 y el numero especificado en la funcion menos 1)
         if numero % i == 0: 
             #Como me basta saber si el numero es divisible por otro numero distinto de 1 y si mismo, ni bien se encuentre ese numero el loop se rompe y la variable x queda definida
             x = "no es primo"
@@ -13,15 +13,19 @@ def esPrimo(numero):
 
 
 while True:
-    #Dato es el numero ingresado por el usuario el cual pasa de ser un string a un valor numerico y llamo la funcion creada con ese dato
+#El lpop while True me permite mantener el programa corriendo hasta que se ejecuten todas las funciones
     dato = input("Ingrese un numero: ")
+    #Dato es el numero ingresado por el usuario el cual pasa de ser un string a un valor numerico y llamo la funcion creada con ese dato
     dato = int(dato)
-    y = esPrimo(dato)       
+    #Cambio el tipo de dato de string a numerico
+    y = esPrimo(dato)     
+    #Llamo la funcion con el parametro dato  
     print(f"El numero {dato} {y}")
     #Devuelvo el numero y la informacion recaudada
     
     if input():
         break
+    #Rompe el loop while cuando el usuario introduce un input cualquiera
 
 
 
