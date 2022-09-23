@@ -37,4 +37,4 @@
 16) 4
 17) Preorden: A-B-F-G-H-C-I-J-K-L-M-D-E-N-P-Q
     Postorden: H-G-F-B -L-M-K-I-J-C-D-P-Q-N-E-A
-    Inorden: 
+    
