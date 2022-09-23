@@ -10,7 +10,7 @@ def funcion(i, n):
         # Añado el elemento
         L.append(elementos) 
 
-    # Devuelve la lista con todos los elementos menos aquellos que sean igual al n especificado
+    # Devuelve la lista con todos los elementos menos aquellos que tengan el mismo valor que n 
     return ([i for i in L if i != n])
 
 # Numero de elementos a ingresar
