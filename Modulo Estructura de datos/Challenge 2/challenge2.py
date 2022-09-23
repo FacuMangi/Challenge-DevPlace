@@ -1,5 +1,5 @@
-import clasePila 
-pilaTemp = []
+import clase_pila 
+pila_temp = []
 
 def reemplazar(pila, nuevo, viejo):
     #Siempre que la pila tenga elementos, se removera el primero y se comparara con el valor "viejo"
@@ -7,14 +7,14 @@ def reemplazar(pila, nuevo, viejo):
         x = pila.pop()
         #Si ese elemento es igual a "viejo", se agrega el "nuevo" elemento a una pila temporal
         if viejo == x:
-            pilaTemp.append(nuevo)
+            pila_temp.append(nuevo)
         #Si no es igual a "viejo2, se agrega el elemento comparado a la pila temporal"
         else:
-            pilaTemp.append(x)
+            pila_temp.append(x)
     
     #Se traspasan los elementos de la pila temporal a la pila original
-    while pilaTemp:
-        j = pilaTemp.pop()
+    while pila_temp:
+        j = pila_temp.pop()
         pila.append(j)
     
     return pila

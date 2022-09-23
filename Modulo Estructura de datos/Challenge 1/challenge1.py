@@ -7,7 +7,7 @@ def funcion(i, n):
     for i in range(0, i):
         elementos = int(input())
     
-        # Añado el elemento
+        # Añado el elemento a la lista
         L.append(elementos) 
 
     # Devuelve la lista con todos los elementos menos aquellos que tengan el mismo valor que n 

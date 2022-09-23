@@ -1,4 +1,4 @@
-def esPrimo(numero):        
+def es_primo(numero):        
     #Defino la funcion que sera llamada cuando se ejecute el programa
     for i in range(2, numero):
         #Creo un loop for para un rango dado por el numero a analizar (este funcion range toma los naturales entre el 2 y el numero especificado en la funcion menos 1)
@@ -18,7 +18,7 @@ while True:
     #Dato es el numero ingresado por el usuario el cual pasa de ser un string a un valor numerico y llamo la funcion creada con ese dato
     dato = int(dato)
     #Cambio el tipo de dato de string a numerico
-    y = esPrimo(dato)     
+    y = es_primo(dato)     
     #Llamo la funcion con el parametro dato  
     print(f"El numero {dato} {y}")
     #Devuelvo el numero y la informacion recaudada

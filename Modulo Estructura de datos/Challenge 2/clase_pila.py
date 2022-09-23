@@ -17,7 +17,7 @@ class Pila:
         except IndexError:
             raise ValueError("Pila vacia")
     
-    def esVacia(self):
+    def es_vacia(self):
         """Devuelve True si la lista esta vacia, False si no lo esta"""
         return self.items == []
     

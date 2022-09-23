@@ -2,7 +2,7 @@ from random import randint
 #Importo de random el metodo randint que devuelve un numero aleatorio dado un determinado rango
 
 def main():
-    randNum = randint(0, 1000)
+    rand_num = randint(0, 1000)
     #Se genero el numero
     print('Se genero un numero entre 0 y 1000. ¿Que numero es?')
     #Devuelve el mensaje al usuario
@@ -14,11 +14,11 @@ def main():
         intento = int(intento)
         #Cambio el tipo de dato de string a numerico
         
-        if intento == randNum:
+        if intento == rand_num:
             break
-        if intento < randNum:
+        if intento < rand_num:
             print('Es mayor')
-        if intento > randNum:
+        if intento > rand_num:
             print('Es menor')
         #Si el usuario acierta se cierra el programa, de lo contrario devuelve las pistas dependiendo de la comparacion entre el intento y el numero
 
